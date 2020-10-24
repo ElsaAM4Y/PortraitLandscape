@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PortraitLandscape.Views.Page1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:PortraitLandscape.ViewModels">
+    <ContentPage.BindingContext>
+        <viewModels:Page1ViewModel />
+    </ContentPage.BindingContext>
+    <!--<Grid>
+                <ContentView Content="{Binding PageContentView}" HorizontalOptions="FillAndExpand" />
+        </Grid>-->
+
+    <Label
+        FontSize="Large"
+        Text="{Binding MyContentView}"
+        TextColor="Red" />
+
+</ContentPage>
